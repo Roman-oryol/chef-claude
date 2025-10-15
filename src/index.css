@@ -1,4 +1,5 @@
 @import './components/Header.css';
+@import './components/Main.css';
 
 * {
   box-sizing: border-box;
