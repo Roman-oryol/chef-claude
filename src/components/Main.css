@@ -5,12 +5,13 @@ main {
 
 .add-ingredient-form {
   display: flex;
-  justify-content: space-between;
-  column-gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
   margin-bottom: 30px;
 
   input {
-    flex-grow: 1;
+    width: 100%;
     min-width: 150px;
     padding: 9px 13px;
     font-size: 14px;
@@ -32,6 +33,7 @@ main {
   }
 
   button {
+    max-width: 250px;
     padding: 9px 17px;
     font-family: inherit;
     color: #fafaf8;
@@ -61,6 +63,19 @@ main {
     &:focus-visible {
       outline: 2px dashed #3f3b3b;
       outline-offset: 2px;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .add-ingredient-form {
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: stretch; */
+    column-gap: 1rem;
+
+    input {
+      width: 100%;
     }
   }
 }
@@ -117,6 +132,13 @@ main {
     button:active {
       background-color: #d84413;
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .ingredients__get-recipe {
+    flex-direction: column;
+    row-gap: 1rem;
   }
 }
 
