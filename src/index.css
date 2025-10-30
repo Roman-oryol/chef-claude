@@ -24,3 +24,26 @@ body {
   margin-inline: auto;
   padding-inline: var(--container-padding-x);
 }
+
+.title-sm-sb {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.875rem;
+  line-height: 1.27;
+  color: #141413;
+}
+
+.text-lg-reg {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.56;
+  color: #475467;
+}
+
+.text-sm {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  color: #475467;
+}
